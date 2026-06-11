@@ -1,0 +1,165 @@
+@prefix : <http://sneakerproject.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Ontology
+#################################################################
+
+<http://sneakerproject.org>
+    a owl:Ontology .
+
+#################################################################
+# Core Classes (from ADOxx)
+#################################################################
+
+:Node a owl:Class .
+
+:StartStep a owl:Class ;
+    rdfs:subClassOf :Node .
+
+:EndStep a owl:Class ;
+    rdfs:subClassOf :Node .
+
+:ProcessStep a owl:Class ;
+    rdfs:subClassOf :Node .
+
+:Actor a owl:Class .
+
+:Buyer a owl:Class ;
+    rdfs:subClassOf :Actor .
+
+:Seller a owl:Class ;
+    rdfs:subClassOf :Actor .
+
+:BusinessEntity a owl:Class .
+
+:Shoe a owl:Class ;
+    rdfs:subClassOf :BusinessEntity .
+
+:Order a owl:Class ;
+    rdfs:subClassOf :BusinessEntity .
+
+:Payment a owl:Class ;
+    rdfs:subClassOf :BusinessEntity .
+
+:Shipment a owl:Class ;
+    rdfs:subClassOf :BusinessEntity .
+
+#################################################################
+# Object Properties (Relations from ADOxx connectors)
+#################################################################
+
+:followedBy a owl:ObjectProperty ;
+    rdfs:domain :Node ;
+    rdfs:range :Node .
+
+:performedBy a owl:ObjectProperty ;
+    rdfs:domain :ProcessStep ;
+    rdfs:range :Actor .
+
+:resultsIn a owl:ObjectProperty ;
+    rdfs:domain :ProcessStep ;
+    rdfs:range :BusinessEntity .
+
+:places a owl:ObjectProperty ;
+    rdfs:domain :Buyer ;
+    rdfs:range :Order .
+
+:pays a owl:ObjectProperty ;
+    rdfs:domain :Buyer ;
+    rdfs:range :Payment .
+
+:paidBy a owl:ObjectProperty ;
+    rdfs:domain :Order ;
+    rdfs:range :Payment .
+
+:shippedBy a owl:ObjectProperty ;
+    rdfs:domain :Order ;
+    rdfs:range :Shipment .
+
+:sells a owl:ObjectProperty ;
+    rdfs:domain :Seller ;
+    rdfs:range :Shoe .
+
+#################################################################
+# Data Properties (attributes from ADOxx)
+#################################################################
+
+:actorId a owl:DatatypeProperty ;
+    rdfs:domain :Actor ;
+    rdfs:range xsd:string .
+
+:name a owl:DatatypeProperty ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+:email a owl:DatatypeProperty ;
+    rdfs:domain :Actor ;
+    rdfs:range xsd:string .
+
+:shippingAddress a owl:DatatypeProperty ;
+    rdfs:domain :Buyer ;
+    rdfs:range xsd:string .
+
+:rating a owl:DatatypeProperty ;
+    rdfs:domain :Seller ;
+    rdfs:range xsd:double .
+
+:entityId a owl:DatatypeProperty ;
+    rdfs:domain :BusinessEntity ;
+    rdfs:range xsd:string .
+
+:createdAt a owl:DatatypeProperty ;
+    rdfs:domain :BusinessEntity ;
+    rdfs:range xsd:string .
+
+:status a owl:DatatypeProperty ;
+    rdfs:domain :BusinessEntity ;
+    rdfs:range xsd:string .
+
+:price a owl:DatatypeProperty ;
+    rdfs:domain :Shoe ;
+    rdfs:range xsd:integer .
+
+:brand a owl:DatatypeProperty ;
+    rdfs:domain :Shoe ;
+    rdfs:range xsd:string .
+
+:model a owl:DatatypeProperty ;
+    rdfs:domain :Shoe ;
+    rdfs:range xsd:string .
+
+:size a owl:DatatypeProperty ;
+    rdfs:domain :Shoe ;
+    rdfs:range xsd:double .
+
+:condition a owl:DatatypeProperty ;
+    rdfs:domain :Shoe ;
+    rdfs:range xsd:string .
+
+:paymentMethod a owl:DatatypeProperty ;
+    rdfs:domain :Payment ;
+    rdfs:range xsd:string .
+
+:amount a owl:DatatypeProperty ;
+    rdfs:domain :Payment ;
+    rdfs:range xsd:integer .
+
+:courier a owl:DatatypeProperty ;
+    rdfs:domain :Shipment ;
+    rdfs:range xsd:string .
+
+:trackingNumber a owl:DatatypeProperty ;
+    rdfs:domain :Shipment ;
+    rdfs:range xsd:string .
+
+:estimatedDelivery a owl:DatatypeProperty ;
+    rdfs:domain :Shipment ;
+    rdfs:range xsd:string .
+
+:duration a owl:DatatypeProperty ;
+    rdfs:domain :ProcessStep ;
+    rdfs:range xsd:integer .

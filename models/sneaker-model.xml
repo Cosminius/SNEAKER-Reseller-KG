@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ADOXML SYSTEM "adoxml31.dtd">
+<!-- <ADOXML version="3.1" date="11.06.2026" time="07:43" database="adoxx18" username="reseller" adoversion="Version 1.8"> -->
+<MODELS>
+<MODEL id="mod.14801" name="Reselling app" version="" modeltype="Reselling app" libtype="bp" applib="ADOxx 1.5 Dynamic Experimentation Library empty">
+<MODELATTRIBUTES>
+<ATTRIBUTE name="Version number" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Author" type="STRING">reseller</ATTRIBUTE>
+<ATTRIBUTE name="Creation date" type="STRING">25.05.2026, 20:19</ATTRIBUTE>
+<ATTRIBUTE name="Date last changed" type="STRING">10.06.2026, 21:08:32</ATTRIBUTE>
+<ATTRIBUTE name="Last user" type="STRING">reseller</ATTRIBUTE>
+<ATTRIBUTE name="Keywords" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Model type" type="ENUMERATION">Current model</ATTRIBUTE>
+<ATTRIBUTE name="State" type="ENUMERATION">In process</ATTRIBUTE>
+<ATTRIBUTE name="Reviewed on" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Reviewed by" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Number of objects and relations" type="INTEGER">32</ATTRIBUTE>
+<ATTRIBUTE name="World area" type="STRING">w:20.05cm h:28.74cm minw:5cm minh:5cm</ATTRIBUTE>
+<ATTRIBUTE name="Grid" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Zoom" type="INTEGER">100</ATTRIBUTE>
+<ATTRIBUTE name="Viewable area" type="STRING">VIEW representation:graphic
+GRAPHIC x:-16 y:-16 w:2480 h:1541 scale:1
+TABLE
+</ATTRIBUTE>
+<ATTRIBUTE name="Current mode" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Base name" type="STRING">Reselling app</ATTRIBUTE>
+<ATTRIBUTE name="Access state" type="ENUMERATION">write</ATTRIBUTE>
+<ATTRIBUTE name="Current page layout" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector marks" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Type" type="STRING">Reselling app</ATTRIBUTE>
+<ATTRIBUTE name="Change counter" type="INTEGER">234</ATTRIBUTE>
+<ATTRIBUTE name="Font size" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Context of version" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Position" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="__GfxThumb__" type="CLOB">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</ATTRIBUTE>
+</MODELATTRIBUTES>
+<INSTANCE id="obj.15200" class="StartStep" name="StartStep-15200">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:4cm index:1</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="id" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="name" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="triggerType" type="STRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.15203" class="EndStep" name="EndStep-15203">
+<ATTRIBUTE name="Position" type="STRING">NODE x:17.5cm y:4cm index:2</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="id" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="name" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="resultStatus" type="STRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.15206" class="ProcessStep" name="Order shoe">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:4cm index:3</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="id" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="name" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="stepType" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="duration" type="INTEGER">0</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.15209" class="ProcessStep" name="ship order">
+<ATTRIBUTE name="Position" type="STRING">NODE x:14.5cm y:4cm index:4</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="id" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="name" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="stepType" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="duration" type="INTEGER">0</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.15215" class="ProcessStep" name="pay order">
+<ATTRIBUTE name="Position" type="STRING">NODE x:12cm y:4cm index:5</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="id" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="name" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="stepType" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="duration" type="INTEGER">0</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.15223" class="Buyer" name="Buyer-15223">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7cm y:6.5cm index:10</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="actorId" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="name" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="email" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="shippingAddress" type="STRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.15226" class="Order" name="Order-15226">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:6.5cm index:11</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="entityId" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="createdAt" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="status" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="totalAmount" type="INTEGER">0</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.15232" class="Payment" name="Payment-15232">
+<ATTRIBUTE name="Position" type="STRING">NODE x:12cm y:1cm index:15</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="entityId" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="createdAt" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="status" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="paymentMethod" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="amount" type="INTEGER">0</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.15235" class="Order" name="Order-15235">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15.5cm y:1cm index:16</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="entityId" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="createdAt" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="status" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="totalAmount" type="INTEGER">0</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.15238" class="Buyer" name="Buyer-15238">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:1cm index:17</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="actorId" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="name" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="email" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="shippingAddress" type="STRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.15245" class="Shipment" name="Shipment-15245">
+<ATTRIBUTE name="Position" type="STRING">NODE x:14.5cm y:6.5cm index:22</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="entityId" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="createdAt" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="status" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="courier" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="trackingNumber" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="estimateDelivery" type="STRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.15248" class="Order" name="Order-15248">
+<ATTRIBUTE name="Position" type="STRING">NODE x:12cm y:6.5cm index:23</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="entityId" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="createdAt" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="status" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="totalAmount" type="INTEGER">0</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.15253" class="ProcessStep" name="post shoe">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7cm y:4cm index:26</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="id" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="name" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="stepType" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="duration" type="INTEGER">0</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.15257" class="Seller" name="Seller-15257">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7cm y:1cm index:28</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="actorId" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="name" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="email" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="rating" type="DOUBLE">0</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.15260" class="Shoe" name="Shoe-15260">
+<ATTRIBUTE name="Position" type="STRING">NODE x:4.5cm y:1cm index:29</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="entityId" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="createdAt" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="status" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="brand" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="model" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="size" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="condition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="price" type="INTEGER">0</ATTRIBUTE>
+</INSTANCE>
+<CONNECTOR id="con.15218" class="followedBy">
+<FROM instance="StartStep-15200" class="StartStep"></FROM>
+<TO instance="post shoe" class="ProcessStep"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:6</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15219" class="followedBy">
+<FROM instance="Order shoe" class="ProcessStep"></FROM>
+<TO instance="pay order" class="ProcessStep"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:7</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15220" class="followedBy">
+<FROM instance="pay order" class="ProcessStep"></FROM>
+<TO instance="ship order" class="ProcessStep"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:8</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15221" class="followedBy">
+<FROM instance="ship order" class="ProcessStep"></FROM>
+<TO instance="EndStep-15203" class="EndStep"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:9</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15229" class="performedBy">
+<FROM instance="Order shoe" class="ProcessStep"></FROM>
+<TO instance="Buyer-15223" class="Buyer"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:12</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15230" class="resultsIn">
+<FROM instance="Order shoe" class="ProcessStep"></FROM>
+<TO instance="Order-15226" class="Order"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:13</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15231" class="places">
+<FROM instance="Buyer-15223" class="Buyer"></FROM>
+<TO instance="Order-15226" class="Order"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:14</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15241" class="performedBy">
+<FROM instance="pay order" class="ProcessStep"></FROM>
+<TO instance="Buyer-15238" class="Buyer"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:18</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15242" class="resultsIn">
+<FROM instance="pay order" class="ProcessStep"></FROM>
+<TO instance="Payment-15232" class="Payment"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:19</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15243" class="pays">
+<FROM instance="Buyer-15238" class="Buyer"></FROM>
+<TO instance="Payment-15232" class="Payment"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:20</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15244" class="paidBy">
+<FROM instance="Order-15235" class="Order"></FROM>
+<TO instance="Payment-15232" class="Payment"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:21</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15251" class="resultsIn">
+<FROM instance="ship order" class="ProcessStep"></FROM>
+<TO instance="Shipment-15245" class="Shipment"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:24</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15252" class="shippedBy">
+<FROM instance="Order-15248" class="Order"></FROM>
+<TO instance="Shipment-15245" class="Shipment"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:25</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15256" class="followedBy">
+<FROM instance="post shoe" class="ProcessStep"></FROM>
+<TO instance="Order shoe" class="ProcessStep"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:27</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15263" class="resultsIn">
+<FROM instance="post shoe" class="ProcessStep"></FROM>
+<TO instance="Shoe-15260" class="Shoe"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:30</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15264" class="performedBy">
+<FROM instance="post shoe" class="ProcessStep"></FROM>
+<TO instance="Seller-15257" class="Seller"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:31</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.15600" class="sells">
+<FROM instance="Seller-15257" class="Seller"></FROM>
+<TO instance="Shoe-15260" class="Shoe"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:32</ATTRIBUTE>
+</CONNECTOR>
+</MODEL>
+</MODELS>
+</ADOXML>

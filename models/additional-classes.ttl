@@ -1,0 +1,81 @@
+@prefix : <http://sneakerproject.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sneakerproject.org#sneaker-extension>
+    a owl:Ontology .
+
+#################################################################
+# Additional Classes
+#################################################################
+
+:Brand
+    a owl:Class .
+
+:Region
+    a owl:Class .
+
+:Sale
+    a owl:Class ;
+    rdfs:subClassOf :BusinessEntity ;
+    owl:equivalentClass :Order .
+
+:Sneaker
+    a owl:Class ;
+    rdfs:subClassOf :BusinessEntity ;
+    owl:equivalentClass :Shoe .
+
+#################################################################
+# Object Properties
+#################################################################
+
+:inRegion
+    a owl:ObjectProperty ;
+    rdfs:domain :Sale ;
+    rdfs:range :Region .
+
+:ofBrand
+    a owl:ObjectProperty ;
+    rdfs:domain :Sale ;
+    rdfs:range :Brand .
+
+:soldSneaker
+    a owl:ObjectProperty ;
+    rdfs:domain :Sale ;
+    rdfs:range :Sneaker .
+
+#################################################################
+# Datatype Properties
+#################################################################
+
+:orderDate
+    a owl:DatatypeProperty ;
+    rdfs:domain :Sale ;
+    rdfs:range xsd:date .
+
+:releaseDate
+    a owl:DatatypeProperty ;
+    rdfs:domain :Sale ;
+    rdfs:range xsd:date .
+
+:salePrice
+    a owl:DatatypeProperty ;
+    rdfs:domain :Sale ;
+    rdfs:range xsd:decimal .
+
+:retailPrice
+    a owl:DatatypeProperty ;
+    rdfs:domain :Sale ;
+    rdfs:range xsd:decimal .
+
+:shoeSize
+    a owl:DatatypeProperty ;
+    rdfs:domain :Sale ;
+    rdfs:range xsd:decimal .
+
+:sneakerName
+    a owl:DatatypeProperty ;
+    rdfs:domain :Sneaker ;
+    rdfs:range xsd:string .
