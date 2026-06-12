@@ -1,0 +1,70 @@
+@prefix : <http://sneakerproject.org#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+### Buyers
+:buyer_1 a :Buyer ;
+    :name "Alex Popescu" ;
+    :email "alex.popescu@gmail.com" ;
+    :shippingAddress "Giurgiu, Romania" .
+
+:buyer_2 a :Buyer ;
+    :name "Maria Ionescu" ;
+    :email "maria.ionescu@yahoo.com" ;
+    :shippingAddress "Bucharest, Romania" .
+
+### Sellers
+:seller_1 a :Seller ;
+    :name "SneakerVault EU" ;
+    :rating 4.8 ;
+    :status "active" .
+
+:seller_2 a :Seller ;
+    :name "OffWhiteResellHub" ;
+    :rating 4.6 ;
+    :status "active" .
+
+### Orders (== Sales via equivalence)
+:order_1 a :Order ;
+    owl:sameAs :sale_0 ;
+    :orderDate "2025-05-10"^^xsd:date ;
+    :paidBy :payment_1 ;
+    :shippedBy :shipment_1 .
+
+:order_2 a :Order ;
+    owl:sameAs :sale_1 ;
+    :orderDate "2025-05-12"^^xsd:date ;
+    :paidBy :payment_2 ;
+    :shippedBy :shipment_2 .
+
+### Buyer → Order
+:buyer_1 :places :order_1 .
+:buyer_2 :places :order_2 .
+
+### Payments
+:payment_1 a :Payment ;
+    :amount 320 ;
+    :paymentMethod "card" .
+
+:payment_2 a :Payment ;
+    :amount 450 ;
+    :paymentMethod "paypal" .
+
+### Buyer → Payment
+:buyer_1 :pays :payment_1 .
+:buyer_2 :pays :payment_2 .
+
+### Shipments
+:shipment_1 a :Shipment ;
+    :courier "DHL" ;
+    :trackingNumber "DHL123456RO" ;
+    :estimatedDelivery "2025-05-15" .
+
+:shipment_2 a :Shipment ;
+    :courier "UPS" ;
+    :trackingNumber "UPS987654RO" ;
+    :estimatedDelivery "2025-05-18" .
+
+### Seller → Sale (your required relation)
+:seller_1 :soldSale :sale_0 .
+:seller_2 :soldSale :sale_1 .
