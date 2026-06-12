@@ -182,7 +182,99 @@ These definitions are contained in the `/models/additional_classes.ttl` file.
 
 In addition to the equivalence mappings, this Turtle file contains explicit OWL declarations for the classes and properties discovered in the imported legacy data (`/models/clean_refine_full.ttl`). Since the imported RDF data primarily contains instances and relationships, the corresponding ontology elements (OWL classes, object properties, and datatype properties) are manually defined to provide a complete ontology structure and to support reasoning within GraphDB.
 
+#### Data enrichment using LLMs
+
+To enrich and validate the knowledge graph structure, a limited set of synthetic instances for Buyers, Sellers, Payments, and Shipments was generated using Large Language Models. These instances are used as controlled test data to demonstrate how the defined classes and properties interact within the knowledge graph.
+
+The generated instances are stored in `models/instances.ttl` and serve as supporting data for evaluating and demonstrating the reasoning rules described in Chapter 4
+
 ### 4. Reasoning Rules
+
+There are reasoning rules implemented to enrich the knowledge graph, including OWL axioms, RDFS semantics and SPARQL insert rules. The objective of these rules is to derive implicit knowledge from explicitly stored data.
+
+#### 4.1. OWL Axioms (Schema-Level Reasoning)
+
+OWL axioms are used to define semantic relationships between properties, for instance enabling automatic inference of inverse relations.
+
+```sparql
+@prefix : <http://sneakerproject.org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:soldBy owl:inverseOf :soldSale .
+:placedBy owl:inverseOf :places .
+:paidBy owl:inverseOf :pays .
+```
+
+Example:
+
+If the graph contains `:seller_1 :soldSale :sale_1 .`, the reasoner can infer `:sale_1 :soldBy :seller_1 .`.
+
+To test the effect of the rule above, the following query can be run:
+
+```sparql
+PREFIX : <http://sneakerproject.org#>
+
+SELECT ?seller ?sale
+WHERE {
+  ?sale :soldBy ?seller .
+}
+```
+
+#### 4.2. RDFS Reasoning
+
+RDFS is used for class and hierarchy inference.
+
+__Example: Domain and range inference:__
+
+If the following statement exists `:buyer_1 :places :order_1 .` and the ontology defines:
+
+```sparql
+:places rdfs:domain :Buyer ;
+        rdfs:range :Order .
+```
+then GraphDB infers automatically:
+
+```sparql
+:buyer_1 a :Buyer .
+:order_1 a :Order .
+```
+
+This ensures missing type declarations are automatically completed.
+
+#### 4.3. SPARQL Rule-Based Reasoning
+
+SPARQL rules are used to compute derived attributes that cannot be expressed in OWL.
+
+The following rule is defined for the knowledge graph:
+
+The profit is defined as the sale price minus the retail price. This is defined by the following query:
+
+```sparql
+PREFIX : <http://sneakerproject.org#>
+
+INSERT {
+  ?sale :profit ?p .
+}
+WHERE {
+  ?sale :salePrice ?sp ;
+        :retailPrice ?rp .
+  BIND(?sp - ?rp AS ?p)
+}
+```
+
+and it can be tested using:
+
+```sparql
+PREFIX : <http://sneakerproject.org#>
+
+SELECT ?sale ?sp ?rp ?profit
+WHERE {
+  ?sale :salePrice ?sp ;
+        :retailPrice ?rp ;
+        :profit ?profit .
+}
+LIMIT 20
+```
 
 ## Frontend Application
 
