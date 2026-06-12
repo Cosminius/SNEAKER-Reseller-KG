@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sneaker Reseller KG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sneaker Reseller KG</h1>
+    <select id="mode" title="Choose how your message is answered">
+      <option value="vector">Agent with vector search</option>
+      <option value="plain">Agent without vector search</option>
+      <option value="sparql">Plain graph — SPARQL query</option>
+    </select>
+  </header>
+
+  <main id="chat"></main>
+
+  <footer>
+    <div id="presets" class="presets" hidden>
+      <button type="button" id="btn-preset-select">SELECT</button>
+      <button type="button" id="btn-preset-ask">ASK</button>
+      <button type="button" id="btn-preset-describe">DESCRIBE</button>
+      <button type="button" id="btn-preset-construct">CONSTRUCT</button>
+    </div>
+    <div class="input-row">
+      <textarea id="input" rows="1" spellcheck="false" placeholder="Ask a question about the graph…"></textarea>
+      <button type="button" id="btn-send">Send</button>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -113,4 +113,11 @@ The resulting model was exported in XML format and then converted to Turtle synt
 
 ## Frontend Application
 
+Chat page (`index.html` + `style.css` + `app.js`) for the graph: direct SPARQL queries or the TTYG agents.
+
+- Run `python server.py`, then open <http://localhost:5500>.
+- `server.py` serves the page and proxies `/repositories` + `/rest` to GraphDB on port 7200, so no CORS setup is needed.
+- Agent ids: open <http://localhost:7200/rest/chat/agents> — copy the `id` values into `app.js`.
+- Full guide (setup from scratch, demo script, troubleshooting): see [TUTORIAL.md](TUTORIAL.md).
+
 ## Project Folder Structure
