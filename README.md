@@ -107,6 +107,12 @@ The detailed steps on how the ADOxx metamodel and then the model were created, c
 
 The resulting model was exported in XML format and then converted to Turtle syntax (.ttl file - `sneaker-model.ttl`). This can be imported into GraphDB, defining the ontology of the database.
 
+The resulting model is presented on the diagram below:
+
+![adoxx_model](./doc/adoxx_model.png)
+
+For details about the notation, classes and properties, inspect the `doc/Steps to recreate the ADOxx models` document.
+
 ### 3. Manual RDF Content
 
 The first manually added RDF content consists of semantic mappings between concepts originating from different data sources. In particular, equivalence relationships are defined between the `:Shoe` class from the ADOxx model and the `:Sneaker` class imported from the legacy dataset, as well as between the `:Order` class from the ADOxx model and the `:Sale` class from the legacy dataset. These mappings enable GraphDB to treat equivalent concepts from different sources as representing the same real-world entities.
@@ -181,6 +187,12 @@ These definitions are contained in the `/models/additional_classes.ttl` file.
 ```
 
 In addition to the equivalence mappings, this Turtle file contains explicit OWL declarations for the classes and properties discovered in the imported legacy data (`/models/clean_refine_full.ttl`). Since the imported RDF data primarily contains instances and relationships, the corresponding ontology elements (OWL classes, object properties, and datatype properties) are manually defined to provide a complete ontology structure and to support reasoning within GraphDB.
+
+The imported legacy data, together with the defined equivalent classes results in the ontology presented in the graph below:
+
+![kg graph](./doc/kg_graph.drawio.png)
+
+The equivalence classes were added manually and all the other properties (object and datatype properties) are inserted from the legacy data.
 
 #### Data enrichment using LLMs
 
@@ -285,4 +297,6 @@ Chat page (`index.html` + `style.css` + `app.js`) for the graph: direct SPARQL q
 - Agent ids: open <http://localhost:7200/rest/chat/agents> — copy the `id` values into `app.js`.
 - Full guide (setup from scratch, demo script, troubleshooting): see [TUTORIAL.md](TUTORIAL.md).
 
-## Project Folder Structure
+## Weaviate Vector Database Integration
+
+A Weaviate vector database is integrated into the project, storing local knowledge graph embeddings. The details description of this component is found in the `Tutorial_Weaviate_Gemini_GraphDB-1` file.
